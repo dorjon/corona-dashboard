@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <app-corona-overview
+                [confirmedCases]="countryData.confirmed"
+                [deadCases]="countryData.dead"
+                [recoveredCases]="countryData.recovered"
+            ></app-corona-overview>
+            <app-data-table
+                [tableConfig]="tableConfig"
+                [tableData]="allCityData"
+            ></app-data-table>
+        </div>
+    </div>
+</div>

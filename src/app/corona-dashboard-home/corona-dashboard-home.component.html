@@ -1,0 +1,12 @@
+<div class="container">
+    <app-corona-overview
+    [confirmedCases]="confirmedCases"
+    [deadCases]="deadCases"
+    [recoveredCases]="recoveredcases"
+    ></app-corona-overview>
+    <app-data-table
+    [tableConfig]="tableConfig"
+    [tableData]="tableData"
+    (onClickRow)="onClickRow($event)"
+    ></app-data-table>
+</div>
